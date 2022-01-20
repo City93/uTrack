@@ -1,0 +1,161 @@
+/* TITULO CARPETAS */
+.foldersH2{
+    margin-top: 93px;
+    margin-left: 40px;
+    font-family: Clash Display;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 100%;
+    display: flex;
+    align-items: center;
+    color: #121212;
+}
+
+/* DIV TOTAL SUBIDOS Y SUBIR UNA NUEVA */
+.div-total-new{
+    width: 312px;
+    height: 39px;
+    margin-left: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+    /* TOTAL SUBIDOS */
+    .div-total-new-p{
+        width: 80px;
+        height: 16px;
+        margin: 0;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 100%;
+        display: flex;
+        align-items: center;
+        color: #818181;
+    }
+
+    /* BUTTON */
+    .div-total-new-button{
+        width: 93px;
+        height: 39px;
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #7B61FF;
+        box-sizing: border-box;
+        filter: drop-shadow(0px 10px 16px rgba(123, 97, 255, 0.04));
+        border-radius: 33px;
+        font-family: Clash Display;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: #7B61FF;
+        background-color: white;
+    }
+
+/* DIV PRINCIPAL */
+.div-container{
+    width: 310px;
+    height: 274px;
+    margin-left: 40px;
+    margin-top: 8px;
+}
+
+    /* DIV CUADRADOS GRISES */
+    .div-branding-images{
+        width: 310px;
+        height: 230px;
+    }
+
+        /* DIV CUADRADO GRANDE */
+        .div-branding-images-a{
+            width: 207px;
+            height: 230px;
+            background: #F4F4F4;
+            margin: 0;
+            border-radius: 4px;
+            position: absolute;
+        }
+
+        /* DIV CUADRADOS PEQUEÑOS */
+        .div-branding-images-b{
+            width: 102px;
+            height: 117px;
+            background: #F4F4F4;
+            margin: 0;
+            border-radius: 4px;
+            height: 112px;
+            align-content: flex-start;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            margin-bottom: 7px;
+        }
+
+    /* DIV INFORMACIÓN */
+    .div-branding-information{
+        width: 310px;
+        height: 36px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+        margin-top: 8px;
+        margin-bottom: 20px;
+    }
+
+        /* DIV DERECHO */
+        .div-branding-information-left{
+            width: 147px;
+            height: 36px;
+        }
+
+        /* TÍTULO H4 */        
+        .div-branding-information-left-h4{
+            margin:0;
+            font-family: Clash Display;
+            width: 67px;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 20px;
+            color: #000000;
+        }
+
+        /* PÁRRAFO */  
+        .div-branding-information-left-p{
+            margin:0;
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 12px;
+            line-height: 18px;
+            display: flex;
+            align-items: center;
+            color: #000000;
+        }
+
+        /* DIV ICONO */
+        .div-branding-information-icon{
+            width: 3px;
+            height: 15px;
+        }
+
+            .div-branding-moreIcon{
+                width: 3px;
+                height: 15px;
+            }
+
+.div-two-images{
+    width: 102px;
+    height: 115px;
+    margin-left: 214px;
+}
+    

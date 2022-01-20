@@ -5,7 +5,8 @@ import Profile from './components/Main/Profile/Profile';
 import Nav from './components/Head/Nav';
 import TopNav from './components/Head/TopNav';
 // import LoginIntro from "./components/Main/LoginIntro";
-import Home from "./components/Main/Home";
+// import Home from "./components/Main/Home";
+import Folders from "./components/Main/Folders";
 import {useAuth0} from '@auth0/auth0-react';
 
 function App() {
@@ -16,7 +17,8 @@ function App() {
       {isAuthenticated ? <><Profile/><Logout/> </> : <Login/>}
       <TopNav/>
       {/* <LoginIntro/> */}
-      <Home/>
+      {/* <Home/> */}
+      <Folders/>
       <Nav/>
     </div>
   );
