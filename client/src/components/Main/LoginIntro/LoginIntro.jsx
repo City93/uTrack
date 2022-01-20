@@ -9,12 +9,15 @@ import utrackLogo from "./assets/images/utrackLogo.png";
 import backIconWhite from "./assets/images/backIconWhite.png";
 import inSlide from "./assets/images/inSlide.png";
 import outSlide from "./assets/images/outSlide.png";
+import { useAuth0 } from "@auth0/auth0-react";
 
 // Importamos el archico CSS y normalize
 import './LoginIntro.css'
 import 'normalize.css'
+import Logout from "../Logout/Logout";
 
 const LoginIntro = () => {
+  const { loginWithRedirect } = useAuth0();
 
   const [value, setValue] = useState(1);
 
@@ -32,7 +35,8 @@ const LoginIntro = () => {
   const nextSlide4 = () => {<Profile/>}
 
   return <div className="container">
-
+    {/* <Logout/> */}
+      
       {/* Le damos un valor a cada slide, para que cuando este cambie, nos muestre el siguiente slide */}
       { value === 1 &&
         <div className="slide1">
@@ -69,7 +73,7 @@ const LoginIntro = () => {
             <img  src={loginIllustration} className="loginIntro-illustration" alt="utrackIllustration"/>
           </div>
           <div className="loginIntro-divTexts">
-            <h3 className="loginIntro-h3">Controla y trakea si tus proyectos se usan sin tu permiso.</h3>
+            <h3 className="loginIntro-h3">Controla y trackea si tus proyectos se usan sin tu permiso.</h3>
             <p className="loginIntro-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, vero culpa quaerat quas nulla ad enim soluta similique eius quisquam eveniet dolorem expedita quod, et aperiam ut quae repudiandae itaque.</p>
           </div>
           <div className="loginIntro-divList">
@@ -102,10 +106,10 @@ const LoginIntro = () => {
             <img  src={outSlide} className="loginIntro-divInput" alt="outSlide"/>
             <img  src={inSlide} className="loginIntro-divInput" alt="inSlide"/>
           </div>
-          <button className="loginIntro-finalButton" id="buttonSlide3" onClick={nextSlide4}>
+          <button className="loginIntro-finalButton" id="buttonSlide3" onClick={() => loginWithRedirect()}>
             <img  src={backIconWhite} className="loginIntro-backIconWhite" alt="backIcon"/>
           </button>
-          <p className="loginIntro-signIn">Si ya tienes cuenta, <a href="#">inicia sesión.</a></p>
+          <p className="loginIntro-signIn">Si ya tienes cuenta, <a onClick={() => loginWithRedirect()}>inicia sesión.</a></p>
         </div>
       }
   </div>
